@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER huuloc.tran89@gmail.com 
+MAINTAINER nhanpt14@gmail.com 
 LABEL Product="CacheHosting"
 
 RUN	/bin/mkdir -p /zserver/memcached
