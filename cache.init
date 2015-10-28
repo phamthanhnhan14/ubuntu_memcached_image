@@ -1,5 +1,4 @@
 #!/bin/bash
-# locth2@vng.com.vn
 set -e
 
 if test "$#" -ne 2; then
