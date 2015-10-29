@@ -7,6 +7,7 @@ if test "$#" -ne 2; then
     exit 2
 fi
 
-/zserver/memcached/bin/memcached -u zcache -m $2 -p $1 &
-
+#/zserver/memcached/bin/memcached -u zcache -m $2 -p $1 &
+#Run by default
+/zserver/memcached/bin/memcached -u zcache -m 300 -p 11311 &
 /bin/bash
