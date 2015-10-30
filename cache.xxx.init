@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e
+
+if test "$#" -ne 2; then
+    echo "Usage: $0 port[>1024] mem[MB]"
+    echo "Example: $0 11211 30"
+    exit 2
+fi
+
+/zserver/memcached/bin/memcached -u zcache -m $2 -p $1 &
+####This file has changed
+/bin/bash
